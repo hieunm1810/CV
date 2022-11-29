@@ -1,0 +1,119 @@
+.wrapper {
+    .content {
+        .home {
+            margin-left: 3rem;
+            margin-bottom: 4rem;
+
+            .container {
+                &>div {
+                    background-color: $bg-primary-c1;
+                    -webkit-box-shadow: 0 2px 90px 0 rgba($color: #000000, $alpha: 0.07);
+                    box-shadow: 0 2px 90px 0 rgba($color: #000000, $alpha: 0.07);
+                    border-radius: 7px;
+                }
+
+                .title__section {
+                    position: relative;
+                    display: inline-block;
+                    margin-bottom: 3rem;
+
+
+
+                    span.title {
+                        @include text($text-18, $text-weight-bold, $text-secondary-c1);
+                        position: relative;
+                        z-index: 10;
+                    }
+
+                    span.underline {
+                        position: absolute;
+                        width: 100%;
+                        height: 5px;
+                        background-color: $bg-accent-c2;
+                        opacity: 0.4;
+                        inset: auto auto 5px 0;
+                        z-index: 1;
+                    }
+                }
+
+
+                .aboutMe {
+                    padding: 4rem 3rem;
+
+                    p {
+                        @include text($fc: $text-primary-c3);
+                        line-height: 2.4rem;
+                    }
+                }
+
+                .ability {
+                    padding: 4rem 3rem;
+                    background-color: #fafafa;
+
+                    .row {
+                        .col-3 {
+                            box-sizing: border-box;
+                            padding: 0 3rem 0 0;
+
+                            .card {
+                                width: 100%;
+                                box-sizing: border-box;
+                                padding: 2rem 2rem 2rem 2rem;
+
+                                img {
+                                    margin-bottom: 2rem;
+                                }
+
+                                .card-body {
+                                    padding: 0;
+
+                                    .card-title {
+                                        @include text($text-14, $text-weight-semibold, $text-secondary-c1);
+                                        margin-bottom: 1rem;
+                                    }
+
+                                    .card-text {
+                                        @include text($text-size-base, $text-weight-base, #989898);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .skills {
+                    padding: 4rem 3rem;
+
+                    .row {}
+
+                    .col-6 {
+                        .skill__group {
+                            margin-bottom: 2rem;
+
+                            p {
+                                @include text(12px, $text-weight-semibold, $text-secondary-c1);
+                            }
+
+                            .skill__progressBar {
+                                width: 100%;
+                                height: 5px;
+                                background-color: #dfdfdf;
+                                border-radius: 5px;
+                                -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+                                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+                                .percentage {
+                                    height: 5px;
+                                    background-color: $bg-accent-c1;
+                                    border-radius: 5px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

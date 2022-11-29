@@ -1,0 +1,5 @@
+@mixin text($fs: $text-size-base, $fw: $text-weight-base, $fc: $text-primary-c1 ) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc;
+}

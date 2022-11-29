@@ -1,0 +1,95 @@
+.wrapper {
+    .sidebar {
+        flex-basis: 25%;
+        background-color: $bg-primary-c1;
+        border-radius: 7px;
+        -webkit-box-shadow: 0 2px 90px 0 rgba($color: #000000, $alpha: 0.07);
+        box-shadow: 0 2px 90px 0 rgba($color: #000000, $alpha: 0.07);
+        padding-bottom: 2rem;
+
+        .sidebar__title {
+            padding: 2rem;
+
+            h1 {
+                @include text($text-17, $text-weight-bold, $text-secondary-c1);
+                margin: 0;
+            }
+
+            &>p {
+                @include text();
+            }
+        }
+
+
+        .sidebar__profile {
+            width: 100%;
+            clip-path: polygon(0 9%, 100% 0, 100% 94%, 0 100%);
+            margin-top: -2rem;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin-top: -1rem;
+            padding-left: 4rem;
+
+            li {
+                padding: 0 0 2.5rem 2rem;
+                @include text($text-13half, $text-weight-base, $text-primary-c2);
+                border-left: 1px solid $border-primary-c1;
+                position: relative;
+                line-height: 100%;
+
+                &::after {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    inset: 0 auto auto 0;
+                    border: 2px solid $border-accent-c1;
+                    border-radius: 50%;
+                    background-color: $bg-primary-c1;
+
+                    transform: translateX(-4.5px);
+                }
+
+                span {
+                    color: $text-secondary-c2;
+                }
+
+                &:last-child {
+                    border-left: none;
+                }
+
+                &:last-child::after {
+                    transform: translateX(-3.5px);
+                }
+
+
+
+                &:first-child {
+                    padding: 3rem 2rem;
+                }
+
+                &:first-child::after {
+                    content: "";
+                    background: url("../../imgs/glasses.png"), $border-accent-c1;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 3rem 1rem;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+            }
+        }
+    }
+}
