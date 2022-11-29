@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { NavLink } from "react-router-dom";
 export default function Header() {
@@ -40,16 +42,9 @@ export default function Header() {
                   PORTFOLIO
                 </NavLink>
               </li>
-              <li className="nav-item d-flex align-items-center">
-                <a className="nav-link" href="#">
-                  CONTACT
-                </a>
-              </li>
             </ul>
             <div className="header__social d-flex align-items-center">
-              <i className="fa-brands fa-facebook-f"></i>
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-linkedin-in"></i>
+              <a href="https://www.linkedin.com/in/hi%E1%BA%BFu-nguy%E1%BB%85n-b65b59258/" target="_blank"><i className="fa-brands fa-linkedin-in" style={{fontSize: '16px'}}></i></a>
               <button className="header__CTA d-flex align-items-center">
                 Hire Me
                 <i className="fa-solid fa-paper-plane"></i>

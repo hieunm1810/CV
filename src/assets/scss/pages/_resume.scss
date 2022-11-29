@@ -66,18 +66,19 @@
                                     }
 
                                     h3 {
-                                        @include text($text-16, $text-weight-semibold, $text-secondary-c1);
+                                        @include text($text-18, $text-weight-semibold, $text-secondary-c1);
                                         line-height: 100%;
                                         margin-bottom: 7px;
                                     }
 
                                     p:nth-child(2) {
-                                        @include text(12px, $text-weight-base, $text-secondary-c1);
+                                        @include text(15px, $text-weight-base, $text-secondary-c1);
                                         margin-bottom: 1.2rem;
                                     }
 
-                                    p:nth-child(3) {
+                                    p {
                                         @include text($text-size-base, $text-weight-base, #989898);
+                                        line-height: 20px;
                                     }
 
                                     &:last-child {

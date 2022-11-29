@@ -21,6 +21,16 @@ export default function Resume() {
                   <p>May 2020 - Sep 2020</p>
                   <p>Learning and working with Java Spring Boot</p>
                 </li>
+                <li>
+                  <h3>FPT Software</h3>
+                  <p>Sep 2020 - Nov 2021</p>
+                  <p>Build Hooks to reusable functionalities develop.</p>
+                  <p>Designed reusable user interface component.</p>
+                  <p>Use pusher to integrate data immediate for user.</p>
+                  <p>Proficient use Material UI.</p>
+                  <p>Understand UX/UI.</p>
+                  <p>Style through SCSS, SASS.</p>
+                </li>
               </ul>
             </div>
             <div className="col-6">
@@ -31,14 +41,14 @@ export default function Resume() {
                 </li>
                 <li>
                   <h3>FPT University</h3>
-                  <p>2015 - 2021 &#40; not graduated &#41; </p>
+                  <p>2015 - 2021 </p>
                   <p>Software Engineering</p>
                 </li>
-                <li>
+                {/* <li>
                   <h3>Cybersoft Academy</h3>
                   <p>Mar 2022 - Nov 2022</p>
                   <p>Web Front-End Developing</p>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

@@ -17,9 +17,9 @@ export default function SiderBar() {
         <li>
           <span>Name:</span> Nguyễn Minh Hiếu
         </li>
-        <li>
+        {/* <li>
           <span>Birthday:</span> 18 October 1997
-        </li>
+        </li> */}
         <li>
           <span>Email:</span> hieumnguyen1810@gmail.com
         </li>
